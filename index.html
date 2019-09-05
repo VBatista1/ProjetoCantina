@@ -1,71 +1,66 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Formulário de Login e Registro com HTML5 e CSS3</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="login.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div></div>
-    <div class="container">
-        <a class="links" id="paracadastro"></a>
-        <a class="links" id="paralogin"></a>
 
-        <div class="content">
+    <div class="main">
 
-    <!--FORMULÁRIO DE CADASTRO-->
-     <div id="cadastro" >
-                <form method="post" action="https://www.google.com.br">
-                    <h1 class="cabecalho">CANTINA FACENS</h1>
-                    <h1 class="cabecalho">Cadastro de Funcionarios </h1>
-                    
-
-                    <p>
-                        <label class="alinhamento"for="nome_cad">Nome</label>
-                        <input id="nome" name="nome" required="required" type="text" placeholder="Carlos" />
-                    </p>
-
-					<p>
-                        <label class="alinhamento" for="nome_cad">Sobrenome</label>
-                        <input id="sobrenome" name="sobrenome" required="required" type="text" placeholder="Alves" />
-                    </p>
-
-					<p>
-                        <label class="alinhamento" for="nome_cad">CPF</label>
-                        <input id="cpf" name="cpf" required="required" type="text" placeholder="999.999.999-9" />
-                    </p>
-
-                    <p>
-                        <label class="alinhamento" for="email_cad">Seu e-mail</label>
-                        <input id="email" name="email" required="required" type="email" placeholder="contato@hotmail.com" />
-                    </p>
-
-					 <p>
-                    <p>
-                        <label class="alinhamento" for="senha">Sua senha</label>
-                        <input id="senha" name="senha" required="required" type="password" placeholder="ex. 1234" />
-                    </p>
-                        <label class="alinhamento" for="Sexo">Sexo</label><br/>
-                        <input id="sexo" name="sexo" required="required" type="radio" value="masc" /> Masc
-                        <input id="sexo" name="sexo" required="required" type="radio" value="fem" /> Fem
-                    </p>
-
-
-                    <button type="button" class="btn btn-primary">Cadastrar</button>
-
-                    <p class="link cabecalho">
-                        Já tem conta?
-                        <a href="https://www.google.com.br"> Ir para Login </a>
-                    </p>
-                </form>
-            </div>
+        <div class="container">
+            <form method="POST" class="appointment-form" id="appointment-form">
+                <h2>education appointment form</h2>
+                <div class="form-group-1">
+                    <input type="text" name="title" id="title" placeholder="Title" required />
+                    <input type="text" name="name" id="name" placeholder="Your Name" required />
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <input type="number" name="phone_number" id="phone_number" placeholder="Phone number" required />
+                    <div class="select-list">
+                        <select name="course_type" id="course_type">
+                            <option slected value="">Course Type</option>
+                            <option value="society">Society</option>
+                            <option value="language">Language</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group-2">
+                    <h3>How would you like to bo located ?</h3>
+                    <div class="select-list">
+                        <select name="confirm_type" id="confirm_type">
+                            <option seleected value="">By phone</option>
+                            <option value="by_email">By email</option>
+                        </select>
+                    </div>
+                    <div class="select-list">
+                        <select name="hour_appointment" id="hour_appointment">
+                            <option seleected value="">Hours : 8am 10pm</option>
+                            <option value="9h-11h">Hours : 9am 11pm</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Request an appointment" />
+                </div>
+            </form>
         </div>
+
     </div>
-    <div class=imagem></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
