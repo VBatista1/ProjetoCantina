@@ -1,0 +1,46 @@
+#cadastro,
+#login{
+  position: absolute;
+  top: 0px;
+  width: 12%;   
+  padding: 18px 6% 68px 6%;
+  margin: 0 0 35px 0;
+ background: #4554A4;
+  border: 1px solid rgba(147, 184, 189,0.8);
+   
+   color: WHITE;
+
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+ 
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  
+}
+
+body{
+	background-image: url("public/Images/fundo.jpg");
+	/*background-size:cover;*/
+	background-position: 150% 0%;
+	background-repeat:no-repeat;
+}
+
+label.alinhamento {
+
+    display: inline-block;
+    width: 90px;
+	color: WHITE;
+}
+/*cadastro{
+color: WHITE;
+
+}*/
+
+.cabecalho {
+	color: WHITE;
+}
